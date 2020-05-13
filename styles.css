@@ -15,7 +15,8 @@ body {
 
 p, ul{
   font-family: 'Mukta', sans-serif;
-  margin: 20px;
+  text-align: justify;
+  font-size: 14px;
 }
 
 h2 {
@@ -44,7 +45,7 @@ li {
 }
 
 a {
-  color: cornsilk;
+  color: rgb(58, 45, 35);
   text-decoration: none;
 }
 
@@ -93,7 +94,7 @@ header {
 }
 
 .accordion:hover {
-  background-color: rgb(155, 107, 160);
+  background-color: rgb(117, 83, 63);
 }
 
 .panel {
@@ -101,7 +102,7 @@ header {
   background-color: rgb(218, 154, 154);
   display: none;
   max-width: 0;
-  overflow: hidden;
+  overflow: scroll;
   transition: max-height 0.2s ease-out;
 }
 
