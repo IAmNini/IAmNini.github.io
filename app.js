@@ -1,7 +1,7 @@
 function main() {
 
-  var acc = document.getElementsByClassName('accordion')
-  var i
+  const acc = document.getElementsByClassName('accordion')
+  let i
 
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener('click', function () {
@@ -10,16 +10,16 @@ function main() {
       this.classList.toggle('active')
 
       /* Toggle between hiding and showing the active panel */
-      var panel = this.nextElementSibling
+      const panel = this.nextElementSibling
       if (panel.style.display === 'block') {
         panel.style.display = 'none'
       } else {
         panel.style.display = 'block'
       }
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null
+      if (panel.style.maxWidth) {
+        panel.style.maxWidth = null
       } else {
-        panel.style.maxHeight = panel.scrollHeight + 'px'
+        panel.style.maxWidth = panel.scrollHeight + 'px'
       }
     })
   }
