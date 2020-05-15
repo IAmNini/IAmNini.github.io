@@ -3,56 +3,61 @@
 }
 
 body {
-  color: cornsilk;
+  color: #f3f1e9;
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
-  background-color: pink;
+  background-image: url(images/download.gif);
+  background-size: cover;
 }
 
-.word-with-different-color {
+/* .word-with-different-color {
   color: darkred;
-}
+} */
 
-p, ul{
+p {
   font-family: 'Mukta', sans-serif;
   text-align: justify;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h2 {
   margin: 0px;
   padding: 0px;
   border: 0px;
-  font-size: 60px;
+  font-size: 55px;
   text-transform: uppercase;
+  color: #aa92c7;
 }
 
 h4 {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
-  font-size: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #d195b8;
 }
 
 ul {
   list-style: none;
   text-align: center;
-  margin: 0;
+  margin: 220px 30px;
+  padding: 0;
 }
 
 li {
-  display: inline-block;
-  margin: 15px;
-  font-size: 30px;
+  display: block;
+  margin: 20px;
+  font-size: 35px;
 }
 
 a {
-  color: rgb(58, 45, 35);
+  color: #09191c;
   text-decoration: none;
 }
 
 header {
   width: 30%;
-  background-color: #FA8072;
+  background-color: #1e2f40;
   padding: 50px 25px;
   margin: 0px;
 }
@@ -71,17 +76,33 @@ header {
 
 .accordion {
   background-color: rgb(196, 127, 127);
-  border: 10px solid beige;
-  color: rgb(59, 46, 46);
+  border: 1px solid #09191c;
+  color: #09191c;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   cursor: pointer;
   padding: 18px;
-  width: 100px;
+  width: 90px;
   height: 100vh;
-  outline: 2px solid rgb(83, 59, 44);
+  outline: 4px solid #09191c;
   transition: 0.4s;
+}
+
+.about-accordion {
+  background-color: #86425d;
+}
+
+.skills-accordion {
+  background-color: #c9698b;
+}
+
+.projects-accordion {
+  background-color: #e88d9a;
+}
+
+.contacts-accordion {
+  background-color: #f1a89d;
 }
 
 .title {
@@ -90,21 +111,39 @@ header {
 }
 
 .active {
-  /* display: none; */
-  background-color: rgb(117, 83, 63);
+  background-color: #cc93bb;
 }
 
 .accordion:hover {
-  background-color: rgb(117, 83, 63);
+  background-color: #cc93bb;
 }
 
 .panel {
   padding: 0 18px;
   background-color: rgb(218, 154, 154);
+  border: 1px solid #09191c;
+  outline: 4px solid #09191c;
   display: none;
   max-width: 0;
   overflow: scroll;
   transition: max-height 0.2s ease-out;
+}
+
+.about-panel {
+  background-color: #86425d;
+  padding: 20px;
+}
+
+.skills-panel {
+  background-color: #c9698b;
+}
+
+.projects-panel {
+  background-color: #e88d9a;
+}
+
+.contacts-panel {
+  background-color: #f1a89d;
 }
 
 section {
@@ -112,13 +151,44 @@ section {
   justify-content: space-around;
 }
 
-img {
+.screenshots {
   height: 280px;
   width: auto;
   margin: 20px 10px;
+  border: 2px solid #09191c;
+}
+
+.headshots {
+  height: 330px;
+  width: auto;
+  border: 2px solid cornsilk;
+  margin: 100px 10px 10px 10px;
+}
+
+.about-text {
+  max-width: 400px;
+  margin: 20px;
 }
 
 .programming-skills {
-  font-size: 50px;
+  margin-top: 20px;
+  font-size: 60px;
   text-align: justify;
+  max-width: 370px;
+}
+
+.projects-content {
+  max-width: 600px;
+  margin: 20px;
+}
+
+.highlighted-text {
+  color: #09191c;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+i {
+  margin: 8px;
 }
