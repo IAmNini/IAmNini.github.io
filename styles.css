@@ -126,8 +126,6 @@ header {
   display: none;
   max-width: 0;
   overflow: scroll;
-  /* transition: max-height 0.2s ease-out; */
-  transition: all 800ms cubic-bezier(0, 0, 0.5, 1);
 }
 
 .show-panel {
@@ -137,18 +135,22 @@ header {
 .about-panel {
   background-color: #86425d;
   padding: 10px;
+  transition: all 900ms cubic-bezier(0, 0, 0.5, 1);
 }
 
 .skills-panel {
   background-color: #c9698b;
+  transition: all 800ms cubic-bezier(0, 0, 0.5, 1);
 }
 
 .projects-panel {
   background-color: #e88d9a;
+  transition: all 2000ms cubic-bezier(0, 0, 0.5, 1);
 }
 
 .contacts-panel {
   background-color: #f1a89d;
+  transition: all 700ms cubic-bezier(0, 0, 0.5, 1);
 }
 
 section {
