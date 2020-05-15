@@ -42,7 +42,7 @@ ul {
 li {
   display: inline-block;
   margin: 15px;
-  font-size: 12px;
+  font-size: 30px;
 }
 
 a {
@@ -78,7 +78,7 @@ header {
   text-transform: uppercase;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 100px;
   height: 100vh;
   outline: 2px solid rgb(83, 59, 44);
   transition: 0.4s;
@@ -91,7 +91,7 @@ header {
 
 .active {
   /* display: none; */
-  /* If I don't display it anymore when it's active then how to do I toggle it? Hmm... */
+  background-color: rgb(117, 83, 63);
 }
 
 .accordion:hover {
@@ -116,4 +116,9 @@ img {
   height: 280px;
   width: auto;
   margin: 20px 10px;
+}
+
+.programming-skills {
+  font-size: 50px;
+  text-align: justify;
 }

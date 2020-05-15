@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="styles.css">
   <script src="app.js"></script>
   <title>Fortuny Carrega</title>
 </head>
@@ -25,21 +26,13 @@
     <div class="sections-container">
 
       <section class="about-section">
-        <button class="accordion"><span class="title">About Me</span></button>
-        <div class="panel">
+        <button class="accordion about-accordion"><span class="title">About Me</span></button>
+        <div class="panel about-panel">
           <p>I am a Software Engineer with skills both in the front end and in the back end. I graduated from university
             with a degree in Economics and Management, but my passion for problem solving and logic quickly directed me
             towards a career in software development. I decided to take the Software Engineering Immersive course at
             General Assembly, where I learned how to build full-stack applications with JavaScript, Express, React,
             Python and Django. I am very excited to start working as a developer.</p>
-          <h5>Education</h5>
-          <h6>Codecademy, Online, Oct 2019-Feb 2020</h6>
-          <p>Completed the following courses: “Core Foundations”, “Learn How to Build Websites”, and started career path
-            “Web Development”.</p>
-          <h6>Sungkyunkwan University, Seoul, South Korea, Jan-Mar 2019</h6>
-          <p>Sungkyun Language Institute, Regular Korean Language Program</p>
-          <h6>Bocconi University, Milan, Italy, Sep 2015-Sep 2018</h6>
-          <p>BSc in International Economics and Management</p>
           <p>In my free time, I enjoy watching movies and TV shows and reading books of many different genres and from
             all over the world. Languages and cultures being a passion of mine, I also use movies, TV and books to
             connect with other countries and learn more about them. I also practice my languages this way. I also like
@@ -48,16 +41,38 @@
       </section>
 
       <section class="skills-section">
-        <button class="accordion"><span class="title">Skills</span></button>
-        <div class="panel">
-          <h5>Programming languages:</h5>
-          <p>HTML | CSS/SCSS | JavaScript | Python</p>
-          <h5>Frontend frameworks and tools:</h5>
-          <p>React | Axios | Webpack | NPM | Yarn | Bulma | Material-UI | Testing with Mocha & Chai (beginner)</p>
-          <h5>Backend frameworks and tools:</h5>
-          <p>MongoDB | Mongoose | Node.js | Express | Insomnia | PostgreSQL | TablePlus | Django</p>
-          <h5>Other developing tools:</h5>
-          <p>Git | GitHub | Heroku</p>
+        <button class="accordion skills-accordion"><span class="title">Skills</span></button>
+        <div class="panel skills-panel">
+          <h5>Programming skills:</h5>
+          <div class="programming-skills">
+            <i class="devicon-html5-plain-wordmark"></i>
+            <i class="devicon-css3-plain-wordmark"></i>
+            <i class="devicon-javascript-plain"></i>
+            <i class="devicon-python-plain-wordmark"></i>
+            <br>
+            <i class="devicon-react-original-wordmark"></i>
+            <i class="devicon-webpack-plain-wordmark"></i>
+            <i class="devicon-babel-plain"></i>
+            <i class="fab fa-npm"></i>
+            <i class="fab fa-yarn"></i>
+            <i class="devicon-jquery-plain-wordmark"></i>
+            <i class="devicon-mocha-plain"></i>
+            <i class="devicon-sass-original"></i>
+            <br>
+            <i class="devicon-mongodb-plain-wordmark"></i>
+            <i class="devicon-nodejs-plain-wordmark"></i>
+            <i class="devicon-express-original-wordmark"></i>
+            <i class="devicon-postgresql-plain-wordmark"></i>
+            <i class="devicon-django-plain"></i>
+            <br>
+            <i class="devicon-chrome-plain-wordmark"></i>
+            <i class="devicon-slack-plain-wordmark"></i>
+            <i class="devicon-trello-plain-wordmark"></i>
+            <i class="devicon-visualstudio-plain-wordmark"></i>
+            <i class="devicon-git-plain-wordmark"></i>
+            <i class="devicon-github-plain-wordmark"></i>
+            <i class="devicon-heroku-original-wordmark"></i>
+          </div>
           <h5>Languages:</h5>
           <p>Italian (native) | French (native) | English (fluent) | Spanish (fluent) | Korean (intermediate)</p>
           <h5>Soft Skills:</h5>
@@ -66,8 +81,8 @@
       </section>
 
       <section class="projects-section">
-        <button class="accordion"><span class="title">Projects</span></button>
-        <div class="panel">
+        <button class="accordion projects-accordion"><span class="title">Projects</span></button>
+        <div class="panel projects-panel">
 
           <p>At GA, we had four main projects that we completed throughout the course:</p>
 
@@ -127,14 +142,16 @@
       </section>
 
       <section class="contacts-section">
-        <button class="accordion"><span class="title">Contact Me</span></button>
-        <div class="panel">
-          <ul>
-            <li><a href="mailto:fortuny.carrega@gmail.com">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/fortuny-carrega/">LinkedIn</a></li>
-            <li><a href="https://github.com/IAmNini">GitHub</a></li>
-            <li><a href="https://www.instagram.com/fortunyx/">Instagram</a></li>
-          </ul>
+        <button class="accordion contacts-accordion"><span class="title">Contact Me</span></button>
+        <div class="panel contacts-panel">
+          <div class="contact-icons">
+            <ul>
+              <li><a href="mailto:fortuny.carrega@gmail.com"><i class="fas fa-envelope"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/fortuny-carrega/"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="https://github.com/IAmNini"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.instagram.com/fortunyx/"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
         </div>
       </section>
 
