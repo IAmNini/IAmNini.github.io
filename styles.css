@@ -156,7 +156,7 @@ section {
 }
 
 .screenshots {
-  height: 280px;
+  height: 240px;
   width: auto;
   margin: 20px 10px;
   border: 2px solid #09191c;
@@ -182,7 +182,7 @@ section {
 }
 
 .projects-content {
-  max-width: 600px;
+  max-width: 495px;
   margin: 20px;
 }
 
