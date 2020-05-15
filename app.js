@@ -18,10 +18,11 @@ function main() {
 
       /* Toggle between hiding and showing the active panel */
       const panel = this.nextElementSibling
-      if (panel.style.display === 'block') {
-        panel.style.display = 'none'
+
+      if (panel.classList.contains('show-panel')) {
+        panel.classList.remove('show-panel')
       } else {
-        panel.style.display = 'block'
+        panel.classList.add('show-panel')
       }
 
       if (panel.style.maxWidth) {
@@ -31,43 +32,43 @@ function main() {
       }
 
       if (this.classList.contains('about-accordion')) {
-        skillsPanel.style.display === 'none'
+        skillsPanel.classList.remove('show-panel')
         skillsPanel.style.maxWidth = null
         skillsAcc.classList.remove('active')
-        projectsPanel.style.display === 'none'
+        projectsPanel.classList.remove('show-panel')
         projectsPanel.style.maxWidth = null
         projectsAcc.classList.remove('active')
-        contactMePanel.style.display === 'none'
+        contactMePanel.classList.remove('show-panel')
         contactMePanel.style.maxWidth = null
         contactMeAcc.classList.remove('active')
       } else if (this.classList.contains('skills-accordion')) {
-        aboutMePanel.style.display === 'none'
+        aboutMePanel.classList.remove('show-panel')
         aboutMePanel.style.maxWidth = null
         aboutMeAcc.classList.remove('active')
-        projectsPanel.style.display === 'none'
+        projectsPanel.classList.remove('show-panel')
         projectsPanel.style.maxWidth = null
         projectsAcc.classList.remove('active')
-        contactMePanel.style.display === 'none'
+        contactMePanel.classList.remove('show-panel')
         contactMePanel.style.maxWidth = null
         contactMeAcc.classList.remove('active')
       } else if (this.classList.contains('projects-accordion')) {
-        aboutMePanel.style.display === 'none'
+        aboutMePanel.classList.remove('show-panel')
         aboutMePanel.style.maxWidth = null
         aboutMeAcc.classList.remove('active')
-        skillsPanel.style.display === 'none'
+        skillsPanel.classList.remove('show-panel')
         skillsPanel.style.maxWidth = null
         skillsAcc.classList.remove('active')
-        contactMePanel.style.display === 'none'
+        contactMePanel.classList.remove('show-panel')
         contactMePanel.style.maxWidth = null
         contactMeAcc.classList.remove('active')
       } else if (this.classList.contains('contacts-accordion')) {
-        aboutMePanel.style.display === 'none'
+        aboutMePanel.classList.remove('show-panel')
         aboutMePanel.style.maxWidth = null
         aboutMeAcc.classList.remove('active')
-        skillsPanel.style.display === 'none'
+        skillsPanel.classList.remove('show-panel')
         skillsPanel.style.maxWidth = null
         skillsAcc.classList.remove('active')
-        projectsPanel.style.display === 'none'
+        projectsPanel.classList.remove('show-panel')
         projectsPanel.style.maxWidth = null
         projectsAcc.classList.remove('active')
       }

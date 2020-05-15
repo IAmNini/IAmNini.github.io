@@ -129,6 +129,10 @@ header {
   transition: max-height 0.2s ease-out;
 }
 
+.show-panel {
+  display: block;
+}
+
 .about-panel {
   background-color: #86425d;
   padding: 20px;
