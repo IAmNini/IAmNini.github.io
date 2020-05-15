@@ -136,7 +136,7 @@ header {
 
 .about-panel {
   background-color: #86425d;
-  padding: 20px;
+  padding: 10px;
 }
 
 .skills-panel {
@@ -170,9 +170,14 @@ section {
   margin: 100px 10px 10px 10px;
 }
 
+.pie-chart {
+  height: 320px;
+  width: auto;
+}
+
 .about-text {
-  max-width: 400px;
-  margin: 20px;
+  max-width: 420px;
+  margin: 10px;
 }
 
 .programming-skills {
