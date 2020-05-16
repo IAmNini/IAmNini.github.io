@@ -17,7 +17,7 @@ body {
 p {
   font-family: 'Mukta', sans-serif;
   text-align: justify;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 h2 {
@@ -145,7 +145,7 @@ header {
 
 .projects-panel {
   background-color: #e88d9a;
-  transition: all 2000ms cubic-bezier(0, 0, 0.5, 1);
+  transition: all 2500ms cubic-bezier(0, 0, 0.5, 1);
 }
 
 .contacts-panel {
@@ -173,8 +173,9 @@ section {
 }
 
 .pie-chart {
-  height: 320px;
+  height: 270px;
   width: auto;
+  margin-top: 10px;
 }
 
 .about-text {
@@ -205,4 +206,37 @@ section {
 
 i {
   margin: 10px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-icon {
+  font-size: 15px;
+  display: inline;
+  margin: 28px;
+}
+
+.school-icon-me {
+  margin: 25px;
+}
+
+.graduate-icon-me {
+  margin: 30px;
+}
+
+.arrow {
+  width: 320px;
+  height: auto;
+  display: block;
+  margin: 4px 28px 4px 28px;
+}
+
+.flag {
+  height: 20px;
+  width: auto;
+  display: inline;
+  margin: 0 25.2px;
 }
