@@ -135,7 +135,7 @@ header {
 .about-panel {
   background-color: #86425d;
   padding: 10px;
-  transition: all 900ms cubic-bezier(0, 0, 0.5, 1);
+  transition: all 1500ms cubic-bezier(0, 0, 0.5, 1);
 }
 
 .skills-panel {
@@ -145,7 +145,7 @@ header {
 
 .projects-panel {
   background-color: #e88d9a;
-  transition: all 2500ms cubic-bezier(0, 0, 0.5, 1);
+  transition: all 7500ms cubic-bezier(0, 0, 0.5, 1);
 }
 
 .contacts-panel {
