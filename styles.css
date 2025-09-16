@@ -58,8 +58,12 @@ a {
 header {
   width: 30%;
   background-color: #1e2f40;
-  padding: 50px 25px;
+  padding: 30px;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .everyone-side-by-side {
@@ -67,6 +71,14 @@ header {
   justify-content: stretch;
   width: 100%;
   height: 100vh;
+}
+
+.name-title {
+  font-size: 65px;
+}
+
+.job-title {
+  font-size: 28px;
 }
 
 .sections-container {
@@ -329,4 +341,113 @@ i {
   margin: 0;
   text-align: justify;
   font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .everyone-side-by-side {
+    flex-direction: column;
+    height: auto;
+  }
+
+  header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .name-title {
+    font-size: 58px;
+  }
+
+  .job-title {
+    font-size: 25px;
+  }
+
+  .headshots {
+    margin: 20px 10px;
+  }
+
+  .sections-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .accordion {
+    width: 100%;
+    height: auto;
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .title {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .panel {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .about-text,
+  .projects-content {
+    max-width: none;
+  }
+
+  .screenshots {
+    width: 100%;
+  }
+  section {
+    flex-direction: column;
+  }
+
+  .programming-skills {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+
+  .arrow {
+    width: 350px;
+    height: auto;
+    margin: 4px;
+  }
+  .pie-chart {
+    width: 100%;
+    height: auto;
+  }
+
+  .all-timeline-icons {
+    padding-left: 5px;
+    display: flex;
+    gap: 52px;
+  }
+
+  .timeline-icon {
+    font-size: 15px;
+    display: inline;
+    margin: 0;
+  }
+
+  .school-icon-me {
+    margin-right: 1px;
+  }
+
+  .graduate-icon-me {
+    margin-right: 3px;
+  }
+
+  .marker-icon-me {
+    margin-left: 3px;
+  }
+  .flag {
+    height: 20px;
+    width: auto;
+    display: inline;
+    margin: 0 41px 0 3px;
+  }
 }
